@@ -1,0 +1,14 @@
+.comentario-enter {
+    opacity: 0;
+}
+.comentario-enter-active {
+    opacity: 1;
+    transition: opacity 200ms;
+}
+.comentario-exit {
+    opacity: 1;
+}
+.comentario-exit-active {
+    opacity: 0;
+    transition: opacity 200ms;
+}

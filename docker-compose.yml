@@ -1,0 +1,39 @@
+version: "3"
+services:
+  resenasapp:
+    build:
+      context: ./resenasapp/
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      - resenasapp-api
+    environment:
+      - REACT_APP_BACKEND_URL=${REACT_APP_BACKEND_URL}
+    networks:
+      - mern-app
+  resenasapp-api:
+    build: 
+      context: ./resenasservidor/
+      dockerfile: Dockerfile
+    ports:
+    - "4000:4000"
+    depends_on:
+      - mongo
+    networks:
+      - mern-app
+  mongo:
+    image: mongo:4.0.27-xenial
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - mern-app
+volumes:
+  mongo-data:
+    driver: local
+
+networks:
+  mern-app:
+    driver: bridge
