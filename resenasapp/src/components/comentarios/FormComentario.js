@@ -36,7 +36,7 @@ const FormComentario = ({idAlbumActual}) => {
         <Stack
             component="form"
             spacing={2}
-            sx={{width: {md: '25%', xs: '100%'}}}
+            sx={{width: {md: '35%', xs: '100%'}}}
         >
         
             <Fade in={Boolean(alerta)} timeout={200}

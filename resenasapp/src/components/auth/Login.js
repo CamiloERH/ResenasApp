@@ -75,7 +75,7 @@ const Login = (props) => {
             >
                 <PersonIcon 
                     color="primary"
-                    sx={{marginX: 'auto', fontSize: '15em'}} 
+                    sx={{marginX: 'auto', fontSize: '14em'}} 
                 />
                 <TextField
                     variant="outlined"

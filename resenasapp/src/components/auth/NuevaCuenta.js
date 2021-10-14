@@ -80,7 +80,7 @@ const NuevaCuenta = (props) => {
             >
                 <PersonAddAlt1Icon 
                     color="primary"
-                    sx={{marginX: 'auto', fontSize: '15em'}} 
+                    sx={{marginX: 'auto', fontSize: '14em'}} 
                 />
                 <TextField
                     variant="outlined"
@@ -137,7 +137,7 @@ const NuevaCuenta = (props) => {
                         component={Link}
                         to={'/'}
                     >
-                        Iniciar Sesiñon
+                        Iniciar Sesión
                     </Button>   
                 </Stack>
             </Stack>      
